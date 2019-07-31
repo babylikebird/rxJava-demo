@@ -39,7 +39,7 @@ public class L2_5_GroupByDemo {
                 integerIntegerGroupedObservable.subscribe(new Observer<Integer>() {
                     @Override
                     public void onSubscribe(Disposable d) {
-
+                        log.info("integerIntegerGroupedObservable onSubscribe");
                     }
 
                     @Override
@@ -54,7 +54,7 @@ public class L2_5_GroupByDemo {
 
                     @Override
                     public void onComplete() {
-
+                        log.info("integerIntegerGroupedObservable onComplete");
                     }
                 });
             }
